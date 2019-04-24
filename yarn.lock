@@ -242,6 +242,13 @@
     webpack-dev-server "3.1.14"
     webpack-format-messages "2.0.3"
 
+"@types/cheerio@^0.22.11":
+  version "0.22.11"
+  resolved "https://registry.yarnpkg.com/@types/cheerio/-/cheerio-0.22.11.tgz#61c0facf9636d14ba5f77fc65ed8913aa845d717"
+  integrity sha512-x0X3kPbholdJZng9wDMhb2swvUi3UYRNAuWAmIPIWlfgAJZp//cql/qblE7181Mg7SjWVwq6ldCPCLn5AY/e7w==
+  dependencies:
+    "@types/node" "*"
+
 "@types/node@*":
   version "11.13.7"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.7.tgz#85dbb71c510442d00c0631f99dae957ce44fd104"
@@ -266,18 +273,18 @@
   integrity sha512-p8zp5xqkly3g4cCmo2mKOHI9+Z/kObmDj0BmjbDDJQlgDTiEGTbm17MEwTAusV6XceCy+bNw9q/ZHXHyKo3zkg==
 
 "@typescript-eslint/parser@^0.12.0":
-  version "1.7.1-alpha.2"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-1.7.1-alpha.2.tgz#bc70d7e9e34bef62cb3cdc6531ba4247a4ba2a5c"
-  integrity sha512-JHJXWBjUgq68EBMseLKC72k3wFmwtpmwzJ9GBAeazYeKBVWXJyFcN3lwwqWaK7Dd6n6A9Q4hpvhktjv+0ve7Ew==
+  version "1.7.1-alpha.10"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-1.7.1-alpha.10.tgz#04d3a35ac23e01696aa84f30db04ddb6385917bb"
+  integrity sha512-X7EACzpxXlSypzmTDzRasrT6lnMFD92yOMt3o1DlZnC7tLPnNjdcHUdVma+PcWlEqm5f4ZWQgIoVNlnTOmrycg==
   dependencies:
-    "@typescript-eslint/typescript-estree" "1.7.1-alpha.2+4318a8b"
+    "@typescript-eslint/typescript-estree" "1.7.1-alpha.10+8e2d2f5"
     eslint-scope "^4.0.0"
     eslint-visitor-keys "^1.0.0"
 
-"@typescript-eslint/typescript-estree@1.7.1-alpha.2+4318a8b":
-  version "1.7.1-alpha.2"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-1.7.1-alpha.2.tgz#93e6aea272f634cc4441a1a530415637fd344ee7"
-  integrity sha512-we09pN4b8vEKs+nKiVOnl9Hwc0HkKQJd0mugJ1dQl4taBdgKbK29MwUqTp/3lup3HTIOL8HBneptJJ3EzEfhqg==
+"@typescript-eslint/typescript-estree@1.7.1-alpha.10+8e2d2f5":
+  version "1.7.1-alpha.10"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-1.7.1-alpha.10.tgz#2088dc1543e8bae541bc69143155bea9d7899d55"
+  integrity sha512-WkdhJDj6xO8L0rsmR++mdBBVt3kLzOzO29CuuDPRpzcsfxbo4GbEgy/G6IBTi54+TBJVvTp7+kA+llUoSTkTEg==
   dependencies:
     lodash.unescape "4.0.1"
     semver "5.5.0"

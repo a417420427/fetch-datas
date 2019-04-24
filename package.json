@@ -4,7 +4,7 @@
   "private": true,
   "description": "a program for fun",
   "scripts": {
-    "start": "node bin/www.js",
+    "start": "node start.js",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
@@ -29,6 +29,7 @@
     "@tarojs/taro-swan": "1.2.24",
     "@tarojs/taro-tt": "1.2.24",
     "@tarojs/taro-weapp": "1.2.24",
+    "@types/cheerio": "^0.22.11",
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.3",
     "debug": "^4.1.1",
