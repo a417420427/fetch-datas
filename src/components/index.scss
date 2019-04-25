@@ -1,10 +1,12 @@
 .MovieSection {
     font-size: 24px;
     .title {
-        padding-left: 20px;
-        display: inline-block;
-        line-height: 48px;
-        box-shadow: 0 0 3px 3px rgba(0,0,0,.4)
+        span {
+            padding-left: 20px;
+            display: inline-block;
+            line-height: 60px;
+            font-size: 36px;
+        }
     }
     .moveWrap {
         display: flex;
@@ -25,6 +27,7 @@
         box-sizing: border-box;
         width: 100%;
         height: auto;
+        max-height: 220px;
         overflow: hidden;
         text-align: center;
         img {
@@ -38,5 +41,19 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+    }
+}
+
+.AppMenu {
+    font-size: 30px;
+    .MenuDrawer {}
+    .DrawerItem{
+        color: #666;
+        margin: 0 20px;
+        height: 60px;
+        border-bottom: 1px solid #999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }

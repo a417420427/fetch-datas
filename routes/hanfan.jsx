@@ -1,7 +1,7 @@
 
 import Router from 'koa-router'
 import axios from 'axios'
-import { hanfan } from '../url'
+import { hanfan } from '../src/url'
 import cheerio from 'cheerio'
 
 const router = Router()
@@ -26,13 +26,16 @@ router.get('/', async (ctx) => {
   for(let i=0; i<content.length; i++) {
     const dom = $.find(`.excerpt-${i+1}`)
     datas.push({
-      alt: dom.find('.focus img').attr('alt'),
+      title: dom.find('.focus img').attr('alt'),
       src: dom.find('.focus img').attr('data-src'),
-      tag: dom.find('.meta a').html()
+      //tag: dom.find('.meta a').html(),
+      description: dom.find('.note').html(),
+      href: dom.find('a.focus').attr('href'),
+      time: dom.find('.meta time').html()
     })
   }
   pageData.webUrl = hanfan.url
-  ctx.body =`<html><div>${JSON.stringify(datas)}</div></html>`
+  ctx.body = datas
 })
 
 router.get('/detail/:key', async ctx => {

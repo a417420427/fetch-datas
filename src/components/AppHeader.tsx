@@ -16,7 +16,7 @@ export  class AppHeader extends Component<{}, AppHeaderState> {
     }
   }
     private backToPre = () => {
-
+      this.showDrwaer(!this.state.show)
     }
     private showMenu  = () => {
       this.showDrwaer(!this.state.show)

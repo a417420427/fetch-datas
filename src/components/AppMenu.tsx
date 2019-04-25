@@ -1,7 +1,7 @@
 import { AtDrawer } from 'taro-ui'
-import { View } from '@tarojs/components';
+import { View, Text } from '@tarojs/components';
 import { Component } from '@tarojs/taro';
-
+import {hanfan, lol, dytt, bthome} from '../url'
 export interface AppMenuProps {
     showDrwaer: (isShow: boolean) => void,
     show: boolean
@@ -13,13 +13,20 @@ export class AppMenu extends Component<AppMenuProps> {
     }
     render () {
       return (
-        <View className='index'>
+        <View className='AppMenu'>
           <AtDrawer 
             show={this.props.show} 
             mask 
             onClose={this.onClose.bind(this)} 
-            items={['菜单1', '菜单2', '菜单3']}
-            ></AtDrawer>
+            className="MenuDrawer"
+            >
+              {
+                [hanfan, lol, dytt, bthome].map(item => <View className='DrawerItem'>
+                  <Text>{item.name}</Text>
+                  <Text className="iconfont icon-createtask_fill"> </Text>
+                </View>)
+              }
+            </AtDrawer>
         </View>
       )
     }

@@ -4,9 +4,9 @@ import onerror from 'koa-onerror'
 import bodyparser from 'koa-bodyparser'
 import logger from 'koa-logger'
 import views from 'koa-views'
+import cors from 'koa-cors'
 import router from './routes/index.jsx'
 import hanfan from './routes/hanfan'
-
 const app = new Koa()
 // error handler
 onerror(app)
@@ -17,6 +17,7 @@ app.use(bodyparser({
 }))
 app.use(json())
 app.use(logger())
+app.use(cors())
 app.use(require('koa-static')(__dirname + '/public'))
 
 app.use(views(__dirname + '/views', {
